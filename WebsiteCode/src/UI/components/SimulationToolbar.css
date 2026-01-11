@@ -1,0 +1,65 @@
+
+
+
+.simulation-toolbar-container {
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    /* width: 50vw; */
+    
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: .8rem 2rem;
+    background-color: hsla(0, 0%, 30%, 0.3);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+
+
+.simulation-toolbar-button {
+    
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: .2rem 1rem;
+    background-color: hsla(0, 0%, 85%, 0.8);
+    border: none;
+    border-radius: 1rem;
+    transition: transform .3s ease;
+
+}
+
+.simulation-toolbar-button:hover {
+    cursor: pointer;
+    background-color: hsla(0, 0%, 95%, 1.0);
+    transform: scale(1.1);
+}
+
+.simulation-toolbar-button-highlighted {
+
+    min-width: fit-content;
+    min-height: fit-content;
+    padding: .2rem 1rem;
+    background-color: hsl(301, 100%, 50%);
+    border: none;
+    border-radius: 1rem;
+    transition: transform .3s ease;
+    transform: scale(1.2);
+    margin: 0 .75rem;
+
+}
+
+.simulation-toolbar-button-highlighted:hover {
+    cursor: pointer;
+    background-color: hsla(301, 84%, 70%, 0.8);
+
+}
+
+.simulation-toolbar-button-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}

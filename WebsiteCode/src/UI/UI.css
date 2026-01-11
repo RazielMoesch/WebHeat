@@ -1,0 +1,43 @@
+.timer {
+    position: fixed;
+    top: 85vh;
+    left: 5vw;
+    width: 280px;
+    height: 50px;
+    
+    background-color: hsla(0, 0%, 20%, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsla(0, 0%, 100%, 0.15);
+    border-radius: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    z-index: 2000;
+    pointer-events: none;
+    user-select: none;
+}
+
+.timer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(301, 100%, 50%), transparent);
+    border-radius: 2px;
+}

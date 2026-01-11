@@ -1,0 +1,35 @@
+
+
+
+.webgpu-canvas {
+
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 15%);
+
+
+}
+
+.test-insert {
+
+  position: fixed;
+  top: 10vh;
+  left: 10vh;
+  
+
+}
+
+.start-sim-button {
+  position: fixed;
+  top: 10vh;
+  left: 50vh;
+}
+.stop-sim-button {
+  position: fixed;
+  top: 20vh;
+  left: 50vh;
+}
