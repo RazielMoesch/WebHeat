@@ -1,7 +1,7 @@
 # FDM Based Heat Diffusion PDE Solver using WebGPU and React.js
 
 ![](Images/F35.png "F35")
-## Live Demo - link
+## Live Demo - [Link](https://staging.dyt5pik1qsnne.amplifyapp.com/)
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Physics](#physics)
