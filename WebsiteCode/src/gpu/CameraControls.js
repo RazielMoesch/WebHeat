@@ -11,7 +11,7 @@ class CameraControls {
         this.rightLastDown = {x:0, y:0};
         this.rotation = {x: 0, y: 0};
         this.pan = {x: 0, y: 0};
-        this.distance = 1;
+        this.distance = 10;
         this.leftDragging = false;
         this.rightDragging = false;
 

@@ -65,7 +65,7 @@ const UI = ({
             simRunning
             ?
             <> 
-            <h2 className='timer'>{`Time Simulated: ${timeValue.toFixed(2)}s`}</h2>
+            <h2 className='timer'>{`Time Simulated: ${timeValue?.toFixed(2)}s`}</h2>
             <SimulationToolbar simToggle={handleSimToggle}/>
             </>
             :

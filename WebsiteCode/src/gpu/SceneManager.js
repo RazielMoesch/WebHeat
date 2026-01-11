@@ -15,7 +15,7 @@ class SceneManager {
         this.ambient_temperature = 0;
         this.ambient_diffusivity = 1e-5;
         this.obj_temp = 1000;
-        this.obj_diff = 1e-4;
+        this.obj_diff = 1e-3;
         this.voxelSize = 0.01;
         this.space = new Space(this.ambient_temperature, this.ambient_diffusivity);
         this.camera = new CameraControls(this.gpu);

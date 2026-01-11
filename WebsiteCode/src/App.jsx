@@ -37,6 +37,14 @@ function App() {
 
         sceneRef.current = await SceneManager.create(canvasRef);
 
+        const fileResponse = await fetch("/f35.stl")
+        const blob = await fileResponse.blob();
+        const vertices = await loadSTL(blob);
+        sceneRef.current.handleFileUpload(vertices, .1);
+        sceneRef.current.viewmode = "geometry";
+
+
+
 
         const resize = () => {canvasRef.current.width = window.innerWidth; canvasRef.current.height = window.innerHeight;}
 
