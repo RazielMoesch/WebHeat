@@ -110,16 +110,19 @@ class GeometryRenderer {
             return;
         }
 
-        if (!this.vertexBuffer || this.vertexCount === 0) {
-            console.log("Issue with vertex buffer");
-            return;
-        }
-
+        // if (!this.vertexBuffer || this.vertexCount === 0) {
+        //     console.log("Issue with vertex buffer");
+        //     return;
+        // }
         const pass = encoder.beginRenderPass(descriptor);
-        pass.setPipeline(this.pipeline);
-        pass.setBindGroup(0, this.uniformBindGroup);
-        pass.setVertexBuffer(0, this.vertexBuffer);
-        pass.draw(this.vertexCount); 
+        
+        if (this.vertexBuffer && this.vertexCount > 0) {
+            pass.setPipeline(this.pipeline);
+            pass.setBindGroup(0, this.uniformBindGroup);
+            pass.setVertexBuffer(0, this.vertexBuffer);
+            pass.draw(this.vertexCount); 
+        }
+        
         pass.end();
     }
 }

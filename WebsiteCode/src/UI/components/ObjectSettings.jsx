@@ -20,6 +20,24 @@ const ObjectSettings = () => {
         sceneRef.current?.changeObjectDiff(diff);
     };
 
+    const clearObjects = () => {
+        const scene = sceneRef.current;
+        const geoRenderer = scene.geometryRenderer;
+        
+        // scene.stopEngine();
+        scene.space.objects = {};
+        scene.space.vertices = new Float32Array(0);
+        scene.space.objectCount = 0;
+
+        geoRenderer.vertexCount = 0;
+
+        if (geoRenderer.vertexBuffer) {
+            geoRenderer.vertexBuffer.destroy();
+            geoRenderer.vertexBuffer = null;
+        }
+
+    };
+
 
     return (
         <div className="object-settings-container">
@@ -55,6 +73,8 @@ const ObjectSettings = () => {
                     <span className="object-settings-unit">α</span>
                 </div>
             </div>
+
+            <button onClick={clearObjects}>Clear Objects</button>
 
         </div>
     );
